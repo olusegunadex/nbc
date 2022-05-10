@@ -21,6 +21,14 @@ export const About = () => (
     </li>
   </Fragment>
 );
+export const Register = () => (
+  <Fragment>
+    <li className="menu-item">
+      <Link href="/register">Register</Link>
+    </li>
+  </Fragment>
+);
+
 export const SignupLink = () => (
   <Fragment>
     <li className="menu-item">

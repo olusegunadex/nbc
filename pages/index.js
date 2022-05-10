@@ -1,8 +1,10 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import TestimoinalSlider from "../src/components/Slider/TestimonialSlider";
+import { useRoutes } from "../src/Hooks/useRoutes/useRoutes";
 import Layout from "../src/layouts/Layout";
+import { useAuth } from "../src/Hooks/useAuth/useAuth";
 import { ListingSlider2 } from "../src/sliderProps";
 import {
   ClientSliderOne,
@@ -11,6 +13,10 @@ import {
 } from "../src/sliderProps";
 
 const Index2 = () => {
+  const { state: user } = useAuth();
+  useEffect(() => {
+    useRoutes(user, "/", "register");
+  }, [user]);
   return (
     <Layout header={2}>
       {/*====== Start Hero Section ======*/}

@@ -12,11 +12,11 @@ export const UserContext = createContext({
 
 export function UserContextProvider({ children }) {
   // testing
-  const [state, setState] = useState("NBC Testing Transmssion");
+  const [state, setState] = useState(true);
   return (
     <UserContext.Provider
       // @ts-ignore
-      value={{ state }}
+      value={{ state, setState }}
     >
       {children}
     </UserContext.Provider>

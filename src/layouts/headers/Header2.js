@@ -4,6 +4,7 @@ import {
   About,
   Blog,
   Contact,
+  Register,
   Home,
   Listing,
   Pages,
@@ -77,7 +78,7 @@ const Header2 = () => {
                         </span>
                       </li>
                       <li className="menu-item has-children">
-                        <a href="#">Article</a>
+                        <a href="#">Register</a>
                         <ul className="sub-menu">
                           <Register />
                         </ul>
@@ -86,11 +87,7 @@ const Header2 = () => {
                         </span>
                       </li>
                       <Contact />
-                      <li className="nav-btn">
-                        <Link href="/register">
-                          <a className="main-btn icon-btn">Register</a>
-                        </Link>
-                      </li>
+                      <Register />
                     </ul>
                   </nav>
                 </div>
