@@ -1,6 +1,14 @@
 import Link from "next/link";
 import React from "react";
-import { About, Blog, Contact, Home, Listing, Pages } from "../Menu";
+import {
+  About,
+  Blog,
+  Contact,
+  Home,
+  Listing,
+  Pages,
+  SignupLink
+} from "../Menu";
 
 const Header2 = () => {
   return (
@@ -39,6 +47,7 @@ const Header2 = () => {
                           <i className="ti-arrow-down"></i>
                         </span>
                       </li>
+                      <SignupLink />
                       <About />
                       <li className="menu-item has-children">
                         <a href="#">Listings</a>
@@ -67,10 +76,19 @@ const Header2 = () => {
                           <i className="ti-arrow-down"></i>
                         </span>
                       </li>
+                      <li className="menu-item has-children">
+                        <a href="#">Article</a>
+                        <ul className="sub-menu">
+                          <Register />
+                        </ul>
+                        <span className="dd-trigger">
+                          <i className="ti-arrow-down"></i>
+                        </span>
+                      </li>
                       <Contact />
                       <li className="nav-btn">
-                        <Link href="/add-listing">
-                          <a className="main-btn icon-btn">Add Listing</a>
+                        <Link href="/register">
+                          <a className="main-btn icon-btn">Register</a>
                         </Link>
                       </li>
                     </ul>
