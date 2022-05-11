@@ -1,27 +1,27 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "@firebase/firestore";
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.React_Project_apikey,
-  authDomain: process.env.React_Project_authDomain,
-  projectId: process.env.React_App_Project_projectId,
-  storageBucket: process.env.React_App_Project_storageBucket,
-  messagingSenderId: process.env.React_App_Project_messagingSenderId,
-  appId: process.env.React_App_Project_appId,
-  measurementId: process.env.React_App_Project_measurementId
+  apiKey: "AIzaSyDQSX9rhmpsI9CueWzkwjurOz8dkDxyWf4",
+  authDomain: "emmaapp-1df68.firebaseapp.com",
+  projectId: "emmaapp-1df68",
+  storageBucket: "emmaapp-1df68.appspot.com",
+  messagingSenderId: "1076885532218",
+  appId: "1:1076885532218:web:971173cdc08bf2f8e30f03"
 };
+// const firebaseConfig = {
+//   apiKey: process.env.REACT_APP_APIKEY,
+//   authDomain: process.env.REACT_APP_AUTHDOMAIN,
+//   projectId: process.env.REACT_APP_PROJECTID,
+//   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+//   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+//   appId: process.env.REACT_APP_APPID
+// };
 
-/**
- Things we need from firebase
- * 1: auth
- * 2: database
- * 3: analytics
- */
 // Initialize Firebase
-initializeApp(firebaseConfig);
-const auth = getAuth();
-const database = getFirestore();
-const analytics = getAnalytics();
-
-export { auth, database };
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const database = getFirestore(app);

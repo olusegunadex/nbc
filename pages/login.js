@@ -6,10 +6,8 @@ import { useAuth } from "../src/Hooks/useAuth/useAuth";
 import { useRoutes } from "../src/Hooks/useRoutes/useRoutes";
 import Layout from "../src/layouts/Layout";
 
-const Register = () => {
+const Login = () => {
   // protecting register page from logged in user
-  const { authData, setAuthData } = useAuth();
-  useRoutes(!authData.user, "/register", "/dashboard");
   return (
     <Layout header={2}>
       <div>
@@ -17,12 +15,10 @@ const Register = () => {
         <input type="email" placeholder="johndoe@abc.com" />
         <p>Password</p>
         <input type="password" placeholder="password" />
-        <button onClick={() => setAuthData({ ...authData, user: true })}>
-          Register
-        </button>
+        <button>Register</button>
       </div>
     </Layout>
   );
 };
 
-export default Register;
+export default Login;
