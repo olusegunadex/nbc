@@ -41,10 +41,11 @@ export function UserContextProvider({ children }) {
     // what we need
     // on authStateChange from firebase
     // we need auth that we exported from firebasse config
-    const subscriber = onAuthStateChanged(auth, (response) => {
-      setAuthData({ user: response, authIsReady: true });
+    const unsubscriber = onAuthStateChanged(auth, (userCredentials) => {
+      userCredentials &&
+        setAuthData({ user: userCredentials, authIsReady: true });
     });
-    return subscriber;
+    return () => unsubscriber();
     // clen up func so firebase can check for auth when app mounts and unmount
   }, []);
 
