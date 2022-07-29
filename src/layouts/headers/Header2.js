@@ -108,6 +108,16 @@ const Header2 = () => {
                         <a className="main-btn icon-btn">Add Listing</a>
                       </Link>
                     </li>
+                    <li>
+                    <Link href="/add-listing">
+                        <a className="main-btn icon-btn">Register</a>
+                      </Link>
+                    </li>
+                    <li>
+                    <Link href="/login">
+                        <a className="main-btn icon-btn">Sign In</a>
+                      </Link>
+                    </li>
                     <li className="nav-toggle-btn">
                       <div className="navbar-toggler">
                         <span></span>

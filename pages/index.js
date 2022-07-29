@@ -981,6 +981,7 @@ const Index2 = () => {
                   <p>
                     Putting up your business on NBC is fast and easy! Wish to
                     feature your business too?
+                    Get seen today.
                   </p>
                   <Link href='/listing-grid'>
                     <a className='main-btn icon-btn'>Get Started Now!</a>
@@ -992,34 +993,6 @@ const Index2 = () => {
         </div>
       </section>
       {/*====== End offer Section ======*/}
-      {/*====== Start Testimonial Section ======*/}
-      <section
-        className='testimonial-area bg_cover pt-110 pb-140'
-        style={{
-          backgroundImage: "url(assets/images/bg/testimonial-bg-1.jpg)",
-        }}>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-6'>
-              <div className='section-title section-title-two section-title-white text-center mb-55 wow fadeInUp'>
-                <h2>
-                  <span className='line'>Customer</span> Feedack
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className='row justify-content-center'>
-            <div className='col-lg-8'>
-              <div className='testimonial-wrapper-one text-center wow fadeInUp'>
-                <div className='testimonial-review-area'>
-                  <TestimoinalSlider />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Testimonial Section ======*/}
       {/*====== Start Listing Section ======*/}
       <section className='listing-grid-area pt-110'>
         <div className='container'>

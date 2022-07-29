@@ -1042,17 +1042,18 @@ button {
   background-color: #f7f7f7;
 }
 .header-area-one .header-navigation .site-branding .brand-logo {
-  padding: 21px 10px;
+  padding: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: rgba(0,0,0,0.5);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ff344f;
+  background-color: #fff;
 }
 .header-area-one .header-navigation .nav-menu {
   display: -webkit-box;
@@ -1483,7 +1484,7 @@ button {
 }
 .breadcrumbs-wrapper:after {
   right: 0;
-  background: url(../images/bg/breadcrumbs-bg-2.jpg) no-repeat center;
+  background: url(../images/elements/african-photographer.jpg) no-repeat center;
   background-size: cover;
 }
 @media (max-width: 991px) {
@@ -2303,8 +2304,8 @@ ul.ratings li {
   margin-bottom: 35px;
 }
 .intro-content-box-one .main-btn {
-  background-color: #ffd74e;
-  color: #0d0d0d;
+  background-color: #05390c;
+  color: #fff;
 }
 .intro-content-box-one .main-btn:hover {
   color: #fff;
@@ -3063,8 +3064,8 @@ h3.title {
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #ffd74e;
-  color: #0d0d0d;
+  background-color: #05390c;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3585,8 +3586,8 @@ h3.title {
   width: 78px;
   height: 78px;
   border-radius: 50%;
-  background-color: #ffd74e;
-  color: #0d0d0d;
+  background-color: #05390c;
+  color: #fff;
 }
 .listing-details-wrapper .listing-gallery-box .gallery-slider-one {
   margin-left: -15px;
