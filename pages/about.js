@@ -217,7 +217,7 @@ const About = () => {
       <section
         className="testimonial-area bg_cover pt-110 pb-265"
         style={{
-          backgroundImage: "url(assets/images/bg/testimonial-bg-2.jpg)",
+          backgroundImage: "url(assets/images/bg/testimonial-bg-2.jpg)"
         }}
       >
         <div className="container">
@@ -247,7 +247,7 @@ const About = () => {
           <div
             className="newsletter-wrapper newsletter-wrapper-one bg_cover"
             style={{
-              backgroundImage: "url(assets/images/bg/newsletter-bg-1.jpg)",
+              backgroundImage: "url(assets/images/bg/newsletter-bg-1.jpg)"
             }}
           >
             <div className="row">
